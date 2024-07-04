@@ -8,6 +8,15 @@ html,body {
   padding: 0;
 }
 
+header#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Adjust as needed */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -102,7 +111,7 @@ html,body {
 
 .contact_form input,
 .contact_form textarea {
-  width: 100%;
+  width: 450px;
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -126,7 +135,7 @@ html,body {
   padding: 15px 30px;
   border: none;
   border-radius: 5px;
-  background: linear-gradient(264deg, #F53844 -5.09%, #42378F 106.28%);
+  background: #131314;
   color: #fff;
   font-size: 18px;
   font-family: 'Outfit', sans-serif;
@@ -138,9 +147,6 @@ html,body {
   transform: scale(1.05);
   transition: 0.3s;
 }
-
-
-
 
 footer {
   bottom: 0px;
@@ -201,6 +207,15 @@ footer {
 
 .left .content .social a span:hover {
   background: #ed8f0c;
+}
+
+.right .content span a {
+  text-decoration: none;
+}
+
+.phone .fas.fa-phone-alt {
+  display: inline-block;
+  transform: rotate(90deg);
 }
 
 .text {

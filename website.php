@@ -12,10 +12,10 @@
 </head>
 
 <body>
-    <header>
+    <header id="navbar">
         <div class="navbar">
             <div class="logo">
-                <a href="index.html">
+                <a href="website.php">
                     <img src="images/logo.jpg" alt="Logo">
                 </a>
             </div>
@@ -24,14 +24,14 @@
             </div>
             <div class="menu-navbar">
                 <a href="#home">Home</a>
-                <a href="#about">About</a>
                 <a href="#services">Services</a>
+                <a href="#about">About</a>
                 <a href="#contact">Contact</a>
             </div>
         </div>
     </header>
 
-    <div class="swiper mySwiper">
+    <div id="home" class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="images/pic1.jpg" alt="Slide 1"></div>
             <div class="swiper-slide"><img src="images/pic2.jpg" alt="Slide 2"></div>
@@ -44,7 +44,7 @@
         <div class="swiper-pagination"></div>
     </div>
 
-    <div class="container">
+    <div id="services" class="container">
         <div class="contents">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos quas delectus atque excepturi a porro ullam amet ratione illo mollitia fugiat aliquam alias ex, corporis maxime rem tempore libero qui. Connect with us. You are one click away.</p>
         </div>
@@ -58,8 +58,7 @@
         </div>
     </div>
 
-
-    <footer>
+    <footer id="contact">
         <div class="main-content">
             <div class="left box">
                 <h2>About Us</h2>
@@ -78,32 +77,22 @@
                 <div class="content">
                     <div class="place">
                         <span class="fas fa-map-marker-alt"></span>
-                        <span class="text">Facilities Tower (12th Floor), Kha 199/2 Pragati Sarani, Dhaka–1212</span>
+                        <span class="text"><a href="https://maps.app.goo.gl/GrrSaAAvnMt5pR6KA?g_st=com.google.maps.preview.copy" target="_blank">Facilities Tower (12th Floor), Kha 199/2 Pragati Sarani, Dhaka–1212</a></span>
                     </div>
                     <div class="phone">
                         <span class="fas fa-phone-alt"></span>
-                        <span class="text">01880-622975</span>
+                        <span class="text"><a href="tel:+8801880622975">01880-622975</a></span>
                     </div>
                     <div class="place">
                         <span class="fas fa-envelope"></span>
-                        <span class="text">hello@doin.tech</span>
+                        <span class="text"><a href="mailto:hello@doin.tech">hello@doin.tech</a></span>
                     </div>
                 </div>
             </div>
 
-            <!-- <div class="right box">
-                <h2>Contact Us</h2>
-                <div class="content">
-                    <form class="contact_form" action="#" method="POST">
-                        <input class="contact_form_name" type="text" name="fname" placeholder="Name" required="">
-                        <input class="contact_form_email" type="email" name="email" placeholder="Email" required="">
-                        <textarea class="contact_form_message" id="message" rows="2" cols="25" name="message" placeholder="Your message" required aria-label="Message"></textarea>
-                        <button class="send_button" type="submit" name="send">send</button>
-                    </form>
-                </div>
-            </div> -->
         </div>
     </footer>
+
 
     <?php
     include("config.php");
@@ -116,7 +105,7 @@
         if (!preg_match("/^[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)*@gmail.com$/", $email)) {
             echo "<script>alert('Submission Failed.\\nPlease provide a valid Gmail address.');</script>";
         } else {
-            // Insert the user data into the signup table
+
             $query = "INSERT INTO messages (`Name`, `Email`, `Message`) VALUES ('$your_name','$email','$your_message')";
             $data = mysqli_query($connection, $query);
 
@@ -129,13 +118,13 @@
             }
         }
     }
-?>
-
+    ?>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="swiper.js"></script>
     <script src="popup.js"></script>
     <script src="app.js"></script>
+    <script src="scroll.js"></script>
 </body>
 
 </html>
