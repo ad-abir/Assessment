@@ -48,14 +48,17 @@
         <div class="contents">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos quas delectus atque excepturi a porro ullam amet ratione illo mollitia fugiat aliquam alias ex, corporis maxime rem tempore libero qui. Connect with us. You are one click away.</p>
         </div>
-        <div class="content">
-            <div class="form-container">
-                <form class="contact_form" action="website.php" method="POST">
-                    <input class="contact_form_name" type="text" name="fname" placeholder="Name" required="">
-                    <input class="contact_form_email" type="email" name="email" placeholder="Email" required="">
-                    <textarea class="contact_form_message" id="message" rows="2" cols="25" name="message" placeholder="Your message" required aria-label="Message"></textarea>
-                    <button class="send_button" type="submit" name="send">send</button>
-                </form>
+
+        <div class="container">
+            <div class="content">
+                <div class="form-container">
+                    <form class="contact_form" action="website.php" method="POST">
+                        <input class="contact_form_name" type="text" name="fname" placeholder="Name" required="">
+                        <input class="contact_form_email" type="email" name="email" placeholder="Email" required="">
+                        <textarea class="contact_form_message" id="message" rows="2" cols="25" name="message" placeholder="Your message" required aria-label="Message"></textarea>
+                        <button class="send_button" type="submit" name="send">send</button>
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -64,7 +67,7 @@
                 <div class="left box">
                     <h2>About Us</h2>
                     <div class="content">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit consequuntur sit reprehenderit neque. Voluptas fugit quam sed? Quaerat itaque magni quis, aliquid, laudantium quidem praesentium quisquam rem quasi quas culpa.</p>
+                        <p class="address">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit consequuntur sit reprehenderit neque. Voluptas fugit quam sed? Quaerat itaque magni quis, aliquid, laudantium quidem praesentium quisquam rem quasi quas culpa.</p>
                         <div class="social">
                             <a href="https://www.facebook.com/dointechltd"><span class="fab fa-facebook-f"></span></a>
                             <a href="https://www.instagram.com/dointechltd/"><span class="fab fa-instagram"></span></a>
